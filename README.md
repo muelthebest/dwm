@@ -1,4 +1,4 @@
-# Based on ubuntu system's build dwm
+# Based on Lukesmith'build and reformated on ubuntu systems
 
 ## FAQ
 
