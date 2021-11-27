@@ -1,4 +1,3 @@
-/* See LICENSE file for copyright and license details. */
 
 /* Constants */
 #define TERMINAL "st"
@@ -185,10 +184,10 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_backslash,		spawn,		SHCMD("") }, */
 
 	/* Custom */
-
+		
 	{ MODKEY|ControlMask,		XK_equal,	spawn,		SHCMD("led") },
-	{ MODKEY|ControlMask,		XK_o,		spawn,		SHCMD("kill -42 $(pidof dwmblocks) && notify-send $(apt list --upgradable)") },
-
+	{ MODKEY|ControlMask,		XK_o,		spawn,		SHCMD(TERMINAL " -e sb-popupgrade") },
+	
 	{ MODKEY,			XK_a,		togglegaps,	{0} },
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
@@ -334,4 +333,3 @@ static Button buttons[] = {
 	{ ClkTagBar,		0,		Button5,	shiftview,	{.i = 1} },
 	{ ClkRootWin,		0,		Button2,	togglebar,	{0} },
 };
-
