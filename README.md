@@ -31,4 +31,10 @@ sudo make install
 
 This build of dwm does not block color emoji in the status/info bar, so you must install [libxft-bgra](https://github.com/uditkarode/libxft-bgra) from the AUR, which fixes a libxft color emoji rendering problem, otherwise dwm will crash upon trying to render one. Hopefully this fix will be in all libxft soon enough.
 See tutorial after remove default libxft ("this code remove association packages with libxft, warning!")
--            sudo apt remove libxft
+
+-            git clone https://github.com/uditkarode/libxft-bgra
+-            cd libxft-bgra
+-            sh autogen.sh --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man
+-            sudo make install
+
+>> Learn to how implement my system on [dotfiles](https://github.com/muelthebest/dotfiles)
